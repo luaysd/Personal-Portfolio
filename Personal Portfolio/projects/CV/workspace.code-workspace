@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "..\\..\\..\\..\\wamp\\www\\hack"
+		},
+		{
+			"path": "..\\..\\..\\..\\wamp\\www"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "hack"
+	}
+}
