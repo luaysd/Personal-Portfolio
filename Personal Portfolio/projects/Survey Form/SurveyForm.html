@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<link lang="en">
+<head>
+    <link rel="stylesheet" href="SurveyForm.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+ </head> 
+
+    
+<h1 id="title">
+  Football Camp Survey Form
+</h1>
+
+<p id="description">Thank you for filling our survey</p>
+<body>
+  <form id="survey-form">
+    <label id="name-label" for="name">Name
+    <input 
+           name="name";
+           id="name"
+           type="text"
+        
+        placeholder="Enter your name"
+        required>
+          
+        </label>
+    <label id="email-label" for email>Email
+    <input id="email"
+           
+           name="email"
+           type="email"
+           placeholder="Enter your email"
+           required>
+    </label>
+    
+    <label for="age" id="number-label">Age(optional)
+      <input 
+           name="age"
+           id="number"
+           type="number"
+           placeholder="Enter your age"
+             min="16"
+             max="21">
+     
+    </label>
+     <label for="dropdown" id="select-label">What is your Position
+    <select name="dropdown" id="dropdown">
+      <option  disabled selected value >Select a position</option>
+      <option value="goalkeeper">Goalkeeper</option>
+      <option value="defender">Defender</option>      
+      <option value="midfielder">Midfielder</option>
+      <option value="attacker">Attacker</option>
+    </select>
+    </label>
+    <div id="radio-label">Choose your training schedule :</div>
+    <div id="box">
+       <div><label  for="Monday,Thursday">
+      <input  type="radio" name="schedule" value="Monday,Thursday">
+        Monday,Thursday
+       </label></div>
+      <div><label  for="Tuesday,Friday">
+        <input  type="radio" name="schedule" value="Tuesday,Friday">
+       Tuesday,Friday
+         </label></div>
+      </div >
+      <div id="name-label">Choose your preferred leagues :</div>
+      <div id="checkbox">
+       <div><label for="La_Liga">
+        <input type="checkbox" name="League" id="La_Liga" value="La Liga">
+        La Liga(Spain)
+       </label></div>
+       <div><label for="Bundesliga">
+        <input type="checkbox" name="League" id="Bundesliga" value="Bundesliga">
+        Bundesliga(Germany)
+       </label></div>
+       <div><label for="Premier_league">
+        <input type="checkbox" name="League" id="Premier_League" value="Primier League">
+        Premiere League(England)
+       </label></div>
+      <div><label for="SerieA">
+        <input type="checkbox" name="League" id="SerieA" value="Serie A">
+        Serie A(Italy)
+       </label></div> 
+
+        </div>
+        <div id="comment-label">Write here further information (optional) :</div>
+        <textarea cols="30" rows="10"></textarea>
+        <input id="submit" type="submit" value="submit">
+
+    </form>
+</body> 
+<script src='https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js'></script>
+</html>             

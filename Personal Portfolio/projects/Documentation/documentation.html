@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="documentation.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Documentation</title>
+</head>
+<body>
+
+    <nav id="navbar">
+        <header>C# Documentation</header>
+        <ul>
+            <li><a class="nav-link" href="#Introduction">Introduction</a></li>
+            <li>
+              <a class="nav-link" href="#.Net_Architecture">.Net Architecture</a>
+            </li>
+            <li>
+              <a class="nav-link" href="#C#_and_Java">C# and Java</a>
+            </li>
+            <li><a class="nav-link" href="#Hello_world">Hello world</a></li>
+            <li><a class="nav-link" href="#Variables">Variables</a></li>
+            <li>
+              <a class="nav-link" href="#Declaring_Variables">Declaring Variables</a>
+            </li>
+            <li><a class="nav-link" href="#Variable_scope">Variable scope</a></li>
+            <li><a class="nav-link" href="#Local_variables">Local variables</a></li>
+
+            <li><a class="nav-link" href="#Global_variables">Global variables</a></li>
+            <li><a class="nav-link" href="#Constants">Constants</a></li>
+            <li>
+              <a class="nav-link" href="#if...else_statement">if...else statement</a>
+            </li>
+            <li><a class="nav-link" href="#While_statement">While statement</a></li>
+            <li>
+              <a class="nav-link" href="#Function_declarations">Function declarations</a
+              >
+            </li>
+            <li><a class="nav-link" href="#Reference">Reference</a></li>
+
+</ul>
+</nav>
+
+
+<main id="main-doc">
+    
+    <section class="main-section" id="Introduction" >
+        <header>Introduction</header>
+        <p>
+            C# (pronounced "See Sharp") is a modern, object-oriented, and type-safe programming language. C# enables developers to build many types of secure and robust applications that run in .NET. C# has its roots in the C family of languages and will be immediately familiar to C, C++, Java, and JavaScript programmers. 
+        </p>
+        <p>
+            C# is an object-oriented, component-oriented programming language. C# provides language constructs to directly support these concepts, making C# a natural language in which to create and use software components. Since its origin, C# has added features to support new workloads and emerging software design practices. At its core, C# is an object-oriented language. You define types and their behavior. 
+       </p>
+       <ul>
+           
+       </ul>
+
+    </section>
+    <section class="main-section" id=".Net_Architecture" >
+        <header>.Net Architecture</header>
+      
+        <p>
+            C# programs run on .NET, a virtual execution system called the common language runtime (CLR) and a set of class libraries. The CLR is the implementation by Microsoft of the common language infrastructure (CLI), an international standard. The CLI is the basis for creating execution and development environments in which languages and libraries work together seamlessly.
+        </p>
+        <p>
+            When the C# program is executed, the assembly is loaded into the CLR. The CLR performs Just-In-Time (JIT) compilation to convert the IL code to native machine instructions. The CLR provides other services related to automatic garbage collection, exception handling, and resource management. Code that's executed by the CLR is sometimes referred to as "managed code." "Unmanaged code," is compiled into native machine language that targets a specific platform.
+        </p>
+        
+    </section>
+    <section class="main-section" id="C#_and_Java" >
+        <header>C# and Java</header>
+        <p>
+            Both Java and C# are object oriented, have garbage collection, and compiled. Java has a focus on WORA and cross-platform portability and it’s easier to learn. C# is used for everything Microsoft, and it’s harder to learn.
+        </p>
+        <ul>
+            <b> Key differences :</b>
+        
+            <li>Runtime Environment: Java runs on JRE(Java Runtime Environment), whereas C# runs on CLR(Common Language Runtime).</li>
+            <li>Programming Paradigm: Java is a strictly object-oriented language wheres C# is object-oriented as well as functional, strongly typed, and component-oriented.</li>
+            <li>Operator Overloading: Java doesn't support operator overloading, whereas C# supports operator overloading for multiple operators.</li>
+            <li >Pointers: Java does not support pointers, whereas C# supports pointers only in unsafe mode.</li>
+            <li>Arrays: Java arrays are a specialization of Object, while C# arrays are a specialization of System.</li>
+           
+
+        </ul>
+        </section>
+        
+        </section>
+        <section class="main-section" id="Hello_world"  >
+            <header>Hello world</header>
+            <p>
+                The "Hello, World" program is traditionally used to introduce a programming language. Here it is in C#:
+            </p>
+            <code>using System;<br>
+
+                &numsp; class Hello World <br>
+                &numsp;{<br>
+                    &numsp;&numsp;static void Main() <br>
+                    &numsp;&numsp;&numsp;{<br>
+                        &numsp;&numsp;&numsp;&numsp;&numsp;Console.WriteLine("Hello, World");<br>
+                        &numsp;&numsp;&numsp;} <br>
+                        &numsp;&numsp;}
+                
+                </code>
+       </section>
+        <section class="main-section"  id="Variables">
+            <header>Variables</header>
+            <p>
+                Variables are containers for storing data values.
+                <br>
+                In C#, there are different types of variables (defined with different keywords), for example:
+            </p>
+                <ul>
+                  <li> <span>int</span>  - stores integers (whole numbers), without decimals, such as 123 or -123</li>
+                   <li> <span>double</span>  - stores floating point numbers, with decimals, such as 19.99 or -19.99</li> 
+            <li> <span> char </span>- stores single characters, such as 'a' or 'B'. Char values are surrounded by single quotes</li>
+            
+            <li> <span>string </span> - stores text, such as "Hello World". String values are surrounded by double quotes</li>
+            <li> <span>bool</span>  - stores values with two states: true or false
+            </li>
+            </ul>
+                 
+            </section>
+
+
+            <section class="main-section" id="Declaring_Variables"  >
+                <header>Declaring Variables</header>
+                <p>The declaration and initialization of variables are fundamental to understanding any language. C# is a type-safe language, which means that all variables and constants in C# must have a type, and the declared type is immutable. In C#, types are either reference or value type. </p>
+                <p>Example code :</p>
+                <code>
+                     int myNum = 5; 
+                     <br>
+                    double myDoubleNum = 5.99D;
+                    <br>
+                    char myLetter = 'D';
+                    <br>
+                    bool myBool = true;
+                    bre
+    
+                    string myText = "Hello";
+                 </code>
+
+                 
+                </section>
+                <section class="main-section" id="Variable_scope"  >
+                <header>Variable scope</header>
+                <p>
+                    When you declare a variable outside of any function, it is called a global variable, because it is available to any other code in the current document. When you declare a variable within a function, it is called a local variable, because it is available only within that function.
+                </p>
+                </section>
+                <section class="main-section" id="Local_variables"  >
+                    <header>Local variables</header>
+                    <p>
+                        Local variables are variables declared inside a code block, which is usually part of a method, property, or delegate. Declarations specify the type followed by the name, and optionally the initialization. Initialization sets the variable to a new instance. It must be to a type that is compatible with the declaration type.
+                    </p>
+
+                    <code>
+                        
+                        static void Main(string[] args) <br>
+                           {<br>
+                               &numsp; string a = "Hello World"; <br>
+                               &numsp; Console.WriteLine(a); <br>
+                            }
+                    </code>
+                    <p>In the above code, the variable a is declared as a string and is initialized to "Hello World". </p>
+                    </section>
+
+                    <section class="main-section" id="Global_variables"  >
+                        <header>Global variables</header>
+                        <p>
+                            A global variable is a variable accessible anywhere, for example a field "counter" type integer.
+                          The global variable can be accessed from any function or class within the namespace.
+                        </p>
+                        <p>Example code :</p>
+                           
+                        <code>
+                              using System; <br>    
+                              namespace create_global_variable <br> 
+                              {<br> 
+                                  &numsp; public static class Global <br> 
+                                  &numsp;{<br> 
+                                    &numsp;&numsp;public static string name;<br> 
+                                    &numsp;}<br> 
+                                    &numsp; &numsp;class Program <br>
+                                    &numsp;{<br> 
+                                        &numsp; &numsp; &numsp;static void Main(string[] args)<br> 
+                                        &numsp; &numsp; &numsp;{<br> 
+                                            &numsp; &numsp; &numsp; &numsp;Global.name = "Delft Stack";<br> 
+                                            &numsp; &numsp; &numsp; &numsp;Console.WriteLine(Global.name);<br> 
+                                            &numsp; &numsp; &numsp;  }<br> 
+                                            &numsp;}<br> 
+                              }
+                        </code>
+    
+                        
+                        </section>
+
+                        <section class="main-section" id="Constants"  >
+                            <header>Constants</header>
+                            <p>
+                                Constants are fields whose values are set at compile time and can never be changed. Use constants to provide meaningful names instead of numeric literals ("magic numbers") for special values.
+                            </p>
+                            <P>
+                                To define constant values of integral types (int, byte, and so on) use an enumerated type.
+                            </P>
+                            <code>
+                                public const double Pi = 3.14159;
+                                public const int SpeedOfLight = 300000; // km per sec.
+                            </code>
+    
+    
+    
+                        </section>
+
+                        <section class="main-section" id="if...else_statement" >
+                            <header>if...else statement</header>
+                            <p> 
+                                C# provides many decision-making statements that help the flow of the C# program based on certain logical conditions. Here, you will learn about if, else if, else, and nested if else statements to control the flow based on the conditions.
+                            </p>
+                            <p>
+                                The if statement contains a boolean condition followed by a single or multi-line code block to be executed. At runtime, if a boolean condition evaluates to true, then the code block will be executed, otherwise not.
+                            </p>
+                            <code>
+                                int i = 10, j = 20;<br>
+
+                                  if (i + 1)<br>
+                                  {<br>
+                                      Console.WriteLine("i is less than j");<br>
+                                  } <br>       
+
+                                  if (i + j)<br>
+                                  {<br>
+                                      Console.WriteLine("i is greater than j");<br>
+                                  }   
+                                   </code>                   
+                                  
+                                  <p>
+                                    The else statement can come only after if or else if statement and can be used only once in the if-else statements. The else statement cannot contain any condition and will be executed when all the previous if and else if conditions evaluate to false.
+                                  </p>
+                                  <code>
+                                    int i = 20, j = 20; <br>
+
+                                    if (i > j) <br>
+                                    { <br>
+                                        Console.WriteLine("i is greater than j"); <br>
+                                    } <br>
+                                    else if (i < j) <br>
+                                    { <br>
+                                        Console.WriteLine("i is less than j"); <br>
+                                    } <br>
+                                    else <br>
+                                    { <br>
+                                        Console.WriteLine("i is equal to j"); <br>
+                                    } <br>
+                                  </code>
+                           
+                               
+
+
+                            </section>
+
+                           
+                            <section class="main-section" id="While_statement" >
+                                <header>While statement</header>
+
+                                <p>
+                                    C# provides the while loop to repeatedly execute a block of code as long as the specified condition returns false.
+                                </p>
+                                <code>
+                                    int i = 0; // initialization <br>
+
+                                    while (i < 10) // condition<br>
+                                    {<br>
+                                         Console.WriteLine("i = {0}", i);<br>
+
+                                        i++; // increment<br>
+                                    } <br>                                   
+                                </code>
+                             </section>
+
+                             <section class="main-section" id="Function_declarations" >
+                                <header>Function declarations</header>
+
+                                <p>
+                                    A function allows you to encapsulate a piece of code and call it from other parts of your code. You may very soon run into a situation where you need to repeat a piece of code, from multiple places, and this is where functions come in.
+                                </p>
+                                        
+                                <code>
+                                    public int AddNumbers(int number1, int number2) <br>
+                                    {<br>
+                                      int result = number1 + number2;<br>
+                                      return result;<br>
+                                  }
+                                </code>
+                             </section>
+
+                             <section class="main-section" id="Reference" >
+                                <header>Reference</header>
+                                <p>
+                                    For more information go to <a href="https://docs.microsoft.com/en-us/dotnet/csharp/tour-of-csharp/">wikipedia</a>
+                                </p>
+                              </section>
+     
+
+    
+</main>
+</body>
+</html>
